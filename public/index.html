@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Kris Chat App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script language="javascript">
+        function theme()
+        {
+            theme_type=prompt("Enter theme type- Light or Dark");
+            if (theme_type.toLowerCase()==="light") {
+                var oldlink = document.getElementsByTagName("link").item('0');
+                oldlink.href = '../css/style1.css';
+            } else if(theme_type.toLowerCase()==="dark") {
+                var oldlink = document.getElementsByTagName("link").item('0');
+                oldlink.href = '../css/style.css';
+            }
+            else{
+                alert("Try Again....")
+            }
+        }
+        function inProgress()
+        {
+            alert("We are working on it....\n This will be availabel in Version 2.O");
+        }
+        
+    </script>
+</head>
+<body>
+    <section class="chat_section">
+        <div class="brand">
+            <img height="40"src="../images/app_logo.png" alt="">
+            <h1>Let's Chat</h1>
+                    <img class="call" onclick="inProgress()">
+                    <img class="vcall" onclick="inProgress()">
+                    <img class="setting" onclick="theme()">
+            
+
+        </div>
+        <div class="message_area" >
+            
+        </div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Message...."  autofocus></textarea>
+        </div>
+
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>

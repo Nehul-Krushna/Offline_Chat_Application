@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ffffff;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+section.chat_section{
+    width: 800px;
+    max-width: 90%;
+    background: #ffffff;
+    background-size: cover;
+    box-shadow:20px 20px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 25px ;
+}
+.brand{
+    padding: 20px;
+    background: #e7e7e7;
+    display: flex;
+    align-items: center;
+    border-radius: 15px ;
+}
+.brand h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+.setting{
+    height:30px;
+    margin-left: 10px;
+    content : url("../images/setting_L.png");
+}
+.vcall{
+    height:20px;
+    margin-left: 15px;
+    content : url("../images/vcall_L.png");
+}
+.call{
+    height:30px;
+    margin-left: 65%;
+    content : url("../images/call_L.png");
+}
+.message_area{
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+textarea{
+    
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #ffffff;
+    border-radius: 25px ;
+    color: white;
+}
+textarea{
+    color:black ;
+}
+
+.message{
+    padding: 20px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+.incoming{
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+
+}
+.outgoing{
+    border-radius: 20px;
+    background: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+    word-wrap: break-word;
+
+}
+.message h4{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+.message h6{
+    
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    color: rgb(219, 219, 219);
+    font-size: 12px;
+}
